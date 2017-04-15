@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content class="padding">
+        <h1>As cinco cidades mais tops para se viver!</h1>
+        <h4>Segundo o site WalletHub.com</h4>
+        <ion-list>
+          <ion-item class="item­icon-left">
+            <i class="icon ion-location"></i>
+            <h2>Tampa, CO</h2>
+            <p>​ Colorado Springs é uma cidade norte­americana </p>
+          </ion-item>
+          <ion-item>
+            <h2>Denver,CO</h2>
+            <p>Omaha éuma cidade localizagoa</p>
+            <span class="badge badge-assertive">3</span>
+          </ion-item>
+          <ion-item>
+            Rio de Jaineiro
+            <span class="item-note">Popular</span>
+          </ion-item>
+          <ion-item class="item­icon-left">
+            <a>
+              <h2>Colorado Sprins, CO</h2>
+              <p>​ Colorado Springs é uma cidade norte­americana </p>
+            </a>
+          </ion-item>
+          <ion-item class="item-button-right">
+            Florianopolis
+            <button class="button button-positive">
+              <i class="icon ion-ios-telephone"></i>
+            </button>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
